@@ -1,4 +1,4 @@
-# Projet personnel de SQL : Etude des offres d’emplois en Data Science en France en 2023
+# Projet personnel de SQL : Etude des offres d’emplois dans le domaine de la Data Science en France en 2023
 
 ## Introduction
 En Data Science, les compétences peuvent parfois être nombreuses, même pour un unique type de métier. Il peut donc être difficile de savoir quelle compétence acquérir en priorité. C'est pourquoi nous nous intéressons dans ce rapport aux compétences clés à obtenir pour devenir Data Analyst ou Data Scientist.
