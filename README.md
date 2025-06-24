@@ -5,20 +5,18 @@ En Data Science, les compétences peuvent parfois être nombreuses, même pour u
 
 L'objectif principal de ce projet est d'identifier les compétences les plus demandées et mieux rémunérées dans le domaine de la Data Science en France en 2023.
 
-Ce projet est basé d'une vidéo sur YouTube de Luke Barousse "SQL for Data Analytics - Learn SQL in 4 Hours".
+Ce projet est basé d'une vidéo sur YouTube de Luke Barousse "SQL for Data Analytics - Learn SQL in 4 Hours" : https://www.youtube.com/watch?v=7mz73uXD9DA.
 
 Pour mener à bien ce projet, nous nous sommes servis de :
 - SQL (PostgreSQL) : requêtes et manipulation des données ;
 - Python : ajout des fichiers CSV dans les tables ;
 - Visual Studio Code : éditeur de code choisi pour interagir avec la base de données ;
-- Git et GitHub : partage du projet.
+- Git et GitHub : sauvegarde et partage du projet.
 
 L'ensemble des requêtes SQL ayant été utiles durant ce projet se trouvent [ici](/projet_sql/).
 
 ## Nettoyage des données
-Les données ont été téléchargées sous la forme de quatre fichiers CSV sur un Google Drive
-partagé par Luke Barousse via un lien dans la vidéo YouTube évoquée ci-dessus. Ces fichiers
-sont :
+Les données ont été téléchargées sous la forme de quatre fichiers CSV sur un Google Drive partagé par Luke Barousse via un lien dans la vidéo YouTube évoquée ci-dessus. Les fichiers n'ont pas été mis sur GitHub car ils prennent beaucoup de place. Ces fichiers sont :
 
 - company_dim.csv : informations sur les entreprises ;
 - job_postings_fact.csv : ensemble des informations sur les offres d’emplois ;
@@ -83,7 +81,7 @@ Nous rappelons que les salaires présentés dans les tableaux ci-dessus correspo
 
 ### 2 - Compétences des postes aux salaires les plus élevés
 
-A présent, nous allons chercher les compétences demandées pour les postes trouvés dans la partie précédente. Effectivement, si notre but est d'obtenir l'un de ces postes, il faut vérifier si nous possédons les prérequis associés. Nous les avons regroupés dans les tableaux suivants :
+A présent, nous allons chercher les compétences demandées pour les postes trouvés dans la partie précédente. Effectivement, si notre but est d'obtenir l'un de ces postes, il faut vérifier si nous possédons les prérequis associés. Nous les avons regroupés dans les tableaux suivants dont les requêtes se situent dans le fichier [q2.sql](/projet_sql/q2.sql).
 
 | Compétences | Occurrences |
 | ----------- | ----------- |
@@ -119,7 +117,7 @@ En 2023, pour devenir Data Analyst ou Data Scientist, il était nécessaire de c
 
 ### 3 - Compétences les plus demandées
 
-Comme expliqué dans la partie précédente, afin de devenir Data Analyst ou Data Scientist, des prérequis sont demandés. Contrairement à la partie précédente, nous nous intéressons aux compétences les plus demandées en général pour des postes de Data Analyst et de Data Scientist. Cette partie est tout aussi pertinente que la précédente ; elle nous permet d'avoir une vision d'ensemble sur ces postes et de savoir ce qu'un métier demande en général. De plus, les métiers les mieux rémunérés sont souvent, d'après les tables de la partie [salaires les plus élevés](#1---salaires-les-plus-élevés), des postes demandant plusieurs années d'expérience. De ce fait, ils nécessitent de connaître plus de logiciels et/ou d'avoir plus de qualifications que des postes pour débutants.
+Comme expliqué dans la partie précédente, afin de devenir Data Analyst ou Data Scientist, des prérequis sont demandés. Contrairement à la partie précédente, nous nous intéressons aux compétences les plus demandées en général pour des postes de Data Analyst et de Data Scientist. Cette partie est tout aussi pertinente que la précédente ; elle nous permet d'avoir une vision d'ensemble sur ces postes et de savoir ce qu'un métier demande en général. De plus, les métiers les mieux rémunérés sont souvent, d'après les tables de la partie [salaires les plus élevés](#1---salaires-les-plus-élevés), des postes demandant plusieurs années d'expérience. De ce fait, ils nécessitent de connaître plus de logiciels et/ou d'avoir plus de qualifications que des postes pour débutants. Les requêtes ayant permis d'obtenir les tableaux ci-dessous se trouvent dans le fichier [q3.sql](/projet_sql/q3.sql).
 
 | Compétences | Occurrences |
 | ----------- | ----------- |
@@ -160,6 +158,8 @@ Pour les Data Scientists, les librairies de Python (Pandas, Scikit-Learn, Tensor
 ### 4 - Compétences en fonction du salaire
 Une question intéressante est d'identifier comment les compétences peuvent influencer le salaire. Pour certains, il s'agirait alors d'une manière de décider des compétences à acquérir en priorité.
 
+Les requêtes se trouvent dans le fichier [q4.sql](/projet_sql/q4.sql).
+
 | Compétences | Salaire moyen |
 | ----------- | ------------- |
 | c           | 200000.00     |
@@ -196,6 +196,8 @@ Pour les Data Scientists, nous retrouvons peu de compétences déjà évoquées 
 
 ### 5 - Compétences à acquérir
 Nous pouvons arrivons à notre principal objectif étant d'identifier les compétences à acquérir en priorité. Nous affichons dans les tableaux ci-dessous les compétences les plus demandées en fonction du poste et du salaire moyen annuel. Nous avons choisi de trier les tableaux d'abord par rapport aux occurrences des compétences puis selon le salaire si deux compétences sont tout aussi demandées l'une que l'autre.
+
+Les requêtes se trouvent dans le fichier [q5.sql](/projet_sql/q5.sql).
 
 | Compétences | Demande | Salaire moyen |
 | ----------- | ------- | ------------- |
